@@ -1,0 +1,13 @@
+.listing {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.circular-image {
+    width: 100px;   
+    height: 100px;   
+    border-radius: 50%; 
+    object-fit: cover;  
+    margin: 0 auto;
+}

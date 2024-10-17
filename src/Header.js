@@ -12,7 +12,6 @@ const Header = () => {
       <Navbar.Brand href="#home"><Link to="/">Foodie</Link></Navbar.Brand>
       <Navbar.Brand href="#Login">Login</Navbar.Brand>
       <Navbar.Brand href="#SignUp">SignUp</Navbar.Brand>
-      <Navbar.Brand href="#AddReview"><Link to="/add-review">Add Review</Link></Navbar.Brand>
       </Container>
     </Navbar>
     </>

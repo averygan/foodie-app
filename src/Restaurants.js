@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import RestaurantCard from './RestaurantCard';
 
 const Restaurants = ({ restaurants }) => {
-  return (
-    <div>
-      <ul>
-        {restaurants.map((restaurant) => (
-          <li key={restaurant.id}>
-            <Link to={`/restaurant/${restaurant.id}`}>{restaurant.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <div className="container">
+            <div className="d-flex flex-column align-items-center">
+                {restaurants.map((restaurant) => (
+                    <div className="mb-4" key={restaurant.id}>
+                        <RestaurantCard restaurant={restaurant} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default Restaurants;
