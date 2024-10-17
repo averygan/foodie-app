@@ -28,7 +28,7 @@ const ReviewForm = () => {
         type="text"
         value={food}
         onChange={(e) => setFood(e.target.value)}
-        placeholder="Food Name"
+        placeholder="Food"
         required
       />
       <textarea

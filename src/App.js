@@ -4,7 +4,7 @@ import Header from './Header';
 import ReviewList from './ReviewList'; // If needed
 import ReviewForm from './ReviewForm';
 import Restaurants from './Restaurants';
-// import RestaurantDetails from './RestaurantDetails';
+import RestaurantDetails from './RestaurantDetails';
 
 const App = () => {
   const [restaurants, setRestaurants] = useState([
@@ -22,7 +22,7 @@ const App = () => {
           : restaurant
       )
     );
-  };
+  }
 
   return (
     <Router>
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="/" element={<ReviewList />} />
         <Route path="/add-review" element={<ReviewForm />} />
         <Route path="/restaurants" element={<Restaurants restaurants={restaurants} />} />
-        {/* <Route path="/restaurant/:id" element={<RestaurantDetails restaurants={restaurants} addReview={addReview} />} /> */}
+        <Route path="/restaurant/:id" element={<RestaurantDetails restaurants={restaurants} addReview={addReview} />} />
       </Routes>
     </Router>
   );
