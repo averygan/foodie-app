@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Restaurants = ({ restaurants }) => {
   return (
     <div>
-      <h2>Restaurants</h2>
       <ul>
         {restaurants.map((restaurant) => (
           <li key={restaurant.id}>

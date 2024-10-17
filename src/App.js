@@ -28,7 +28,7 @@ const App = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<ReviewList />} />
+        <Route path="/" element={<Restaurants restaurants={restaurants} />} />
         <Route path="/add-review" element={<ReviewForm />} />
         <Route path="/restaurants" element={<Restaurants restaurants={restaurants} />} />
         <Route path="/restaurant/:id" element={<RestaurantDetails restaurants={restaurants} addReview={addReview} />} />
