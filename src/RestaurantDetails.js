@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import './RestaurantDetails.css'; // Import the CSS file for styling
 
 const RestaurantDetails = ({ restaurants, addReview }) => {
     const { id } = useParams();
@@ -9,7 +10,7 @@ const RestaurantDetails = ({ restaurants, addReview }) => {
     const [rating, setRating] = useState(1);
   
     if (!restaurant) {
-      return <div>Restaurant not found</div>;
+      return <div className="alert alert-danger">Restaurant not found</div>;
     }
   
     const handleSubmit = (e) => {
@@ -21,19 +22,22 @@ const RestaurantDetails = ({ restaurants, addReview }) => {
     };
   
     return (
-      <div className="container mt-4">
-        <h2>{restaurant.name}</h2>
-        <p>{restaurant.description}</p>
-        <img src={restaurant.image} className="listing" alt={restaurant.name} />
-        <h3>Reviews:</h3>
+      <div className="container mt-4 restaurant-details">
+        <h2 className="restaurant-name">{restaurant.name}</h2>
+        <p className="restaurant-description">{restaurant.description}</p>
+        <img src={restaurant.image} className="listing img-fluid rounded" alt={restaurant.name} />
+        
+        <h3 className="reviews-title">Reviews:</h3>
         <ul className="list-group mb-4">
           {restaurant.reviews.map((review, index) => (
             <li key={index} className="list-group-item">
-              {review.text} - Rating: {review.rating} ⭐
+              <div className="review-text">{review.text}</div>
+              <div className="review-rating">Rating: {review.rating} ⭐</div>
             </li>
           ))}
         </ul>
-        <form onSubmit={handleSubmit} className="form-group">
+        
+        <form onSubmit={handleSubmit} className="form-group review-form">
           <textarea
             value={reviewText}
             onChange={(e) => setReviewText(e.target.value)}
@@ -50,6 +54,6 @@ const RestaurantDetails = ({ restaurants, addReview }) => {
         </form>
       </div>
     );
-  };
-  
-  export default RestaurantDetails;
+};
+
+export default RestaurantDetails;
