@@ -5,8 +5,6 @@ import ReviewList from './ReviewList'; // If needed
 import ReviewForm from './ReviewForm';
 import Restaurants from './Restaurants';
 import RestaurantDetails from './RestaurantDetails';
-import RestaurantCard from './components/RestaurantCard';
-import Row from 'react-bootstrap/Row'
 
 const App = () => {
   const [restaurants, setRestaurants] = useState([
@@ -32,16 +30,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Restaurants restaurants={restaurants} />} />
         <Route path="/add-review" element={<ReviewForm />} />
+        {/* <Route path="/restaurantcard" element={<RestaurantCard />} /> */}
         <Route path="/restaurants" element={<Restaurants restaurants={restaurants} />} />
         <Route path="/restaurant/:id" element={<RestaurantDetails restaurants={restaurants} addReview={addReview} />} />
       </Routes>
-      <Row>
-        {restaurants.map((restaurant, index) => (
-          <div className="col-md-6 mb-4" key={index}>
-            <RestaurantCard restaurant={restaurant} />
-          </div>
-        ))}
-      </Row>
     </Router>
   );
 };
