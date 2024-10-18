@@ -1,0 +1,27 @@
+#navBar{
+    background-Color: #fc03d3;
+}
+
+#logo a{
+    color:#FFFFFF;
+    text-Align:left;
+    font-family: cursive;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#login a{
+    background-Color:#FFFFFF;
+    color: black;
+    border-Radius:10px;
+    padding:5px;
+    text-decoration: none;
+}
+
+ #signup a{
+    background-Color:rgba(240, 120, 219,50);
+    color: black;
+    border-Radius:10px;
+    padding:5px;
+    text-decoration: none;
+ }

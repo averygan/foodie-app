@@ -31,7 +31,7 @@ const App = () => {
     fetchImages();
   }, []);
 
-  // Function to add a review to a restaurant
+  // Add a review to a restaurant
   const addReview = (restaurantId, review) => {
     setRestaurants((prevRestaurants) =>
       prevRestaurants.map((restaurant) => 

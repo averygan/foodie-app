@@ -1,48 +1,44 @@
-.container {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .restaurant-name {
+.restaurant-name {
     color: #343a40;
     font-size: 2rem;
     margin-bottom: 10px;
-  }
-  
-  .restaurant-description {
+}
+
+.restaurant-description {
     color: #6c757d;
     font-size: 1.2rem;
     margin-bottom: 20px;
-  }
-  
-  .listing {
-    width: 40rem;
-    height: 40rem;
+}
+
+.listing {
+    width: 500px;
+    height: 500px;
     object-fit: cover;
 }
-  
-  .reviews-title {
+
+.reviews-title {
     margin-top: 20px;
     font-size: 1.5rem;
     color: #495057;
-  }
-  
-  .review-text {
+}
+
+.review-text {
     font-weight: 500;
-  }
-  
-  .review-rating {
+}
+
+.review-rating {
     font-size: 0.9rem;
     color: #adb5bd;
-  }
-  
-  .review-form {
+}
+
+.review-form {
     margin-top: 20px;
-  }
-  
-  .alert {
+}
+
+.alert {
     text-align: center;
-  }
-  
+}
+
+#formSubmit{
+    margin: 20px;
+}

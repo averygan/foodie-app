@@ -50,7 +50,7 @@ const RestaurantDetails = ({ restaurants, addReview }) => {
               <option key={num} value={num}>{num}</option>
             ))}
           </select>
-          <button type="submit" className="btn btn-primary">Submit Review</button>
+          <button type="submit" className="btn btn-primary" id="formSubmit">Submit Review</button>
         </form>
       </div>
     );
