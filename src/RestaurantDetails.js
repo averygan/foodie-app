@@ -32,7 +32,7 @@ const RestaurantDetails = ({ restaurants, addReview }) => {
           {restaurant.reviews.map((review, index) => (
             <li key={index} className="list-group-item">
               <div className="review-text">{review.text}</div>
-              <div className="review-rating">Rating: {review.rating} ⭐</div>
+              <span className="star">Rating: {'⭐'.repeat(review.rating)}</span>
             </li>
           ))}
         </ul>

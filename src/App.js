@@ -17,9 +17,9 @@ const App = () => {
           { id: 1, name: 'Pizza Place', description: 'Delicious pizzas with fresh ingredients.', image: data.image, reviews: [] },
           { id: 2, name: 'Burger Joint', description: 'Juicy burgers and fries.', image: data.image, reviews: [] },
           { id: 3, name: 'Sushi Spot', description: 'Fresh sushi and sashimi.', image: data.image, reviews: [] },
-          { id: 4, name: 'Pizza Place', description: 'Delicious pizzas with fresh ingredients.', image: data.image, reviews: [] },
-          { id: 5, name: 'Burger Joint', description: 'Juicy burgers and fries.', image: data.image, reviews: [] },
-          { id: 6, name: 'Sushi Spot', description: 'Fresh sushi and sashimi.', image: data.image, reviews: [] },
+          { id: 4, name: 'Curry Corner', description: 'Authentic Indian curries with a blend of aromatic spices.', image: data.image, reviews: [] },
+          { id: 5, name: 'Pasta Paradise', description: 'Authentic Italian pasta made with fresh ingredients.', image: data.image, reviews: [] },
+          { id: 6, name: 'Taco Town', description: 'Street-style tacos with bold flavors and fresh salsas.', image: data.image, reviews: [] }
         ];
 
         setRestaurants(initialRestaurants);
